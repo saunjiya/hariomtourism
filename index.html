@@ -1,0 +1,2621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hari Om Tourism | Adi Kailash & Om Parvat Tours | Pithoragarh</title>
+
+<meta name="description"
+content="Hari Om Tourism - Best Tour Operator in Pithoragarh offering Adi Kailash, Om Parvat, Darma Valley, Munsiyari, Chaukori and Panchachuli Tour Packages.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/***************************
+GENERAL
+****************************/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#f7f9fc;
+
+color:#333;
+
+overflow-x:hidden;
+
+}
+
+img{
+
+width:100%;
+
+display:block;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:42px;
+
+font-weight:700;
+
+margin-bottom:60px;
+
+color:#0B3C5D;
+
+position:relative;
+
+}
+
+.title::after{
+
+content:"";
+
+width:80px;
+
+height:4px;
+
+background:#F4B400;
+
+position:absolute;
+
+left:50%;
+
+transform:translateX(-50%);
+
+bottom:-12px;
+
+border-radius:10px;
+
+}
+
+/***************************
+BUTTON
+****************************/
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#F4B400;
+
+color:#000;
+
+font-weight:600;
+
+border-radius:50px;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:#ffcf40;
+
+transform:translateY(-3px);
+
+}
+
+/***************************
+HEADER
+****************************/
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    transition:0.4s;
+}
+
+header.sticky{
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:800;
+
+color:#fff;
+
+}
+
+header.sticky .logo{
+
+color:#0B3C5D;
+
+}
+
+.logo span{
+
+color:#F4B400;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:30px;
+
+}
+
+nav ul li a{
+
+color:#fff;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+header.sticky nav ul li a{
+
+color:#222;
+
+}
+
+nav ul li a:hover{
+
+color:#F4B400;
+
+}
+
+.menu{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+color:white;
+
+}
+
+/***************************
+HERO
+****************************/
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 8% 60px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.hero h1{
+
+font-size:50px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+color:#FFD54F;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.secondary-btn{
+
+padding:15px 35px;
+
+border:2px solid white;
+
+border-radius:50px;
+
+color:white;
+
+transition:.4s;
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+
+color:#000;
+
+}
+
+/***************************
+SCROLL DOWN
+****************************/
+
+.scroll{
+
+position:absolute;
+
+bottom:80px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:35px;
+
+animation:updown 1.5s infinite;
+
+color:white;
+
+}
+
+@keyframes updown{
+
+0%{transform:translate(-50%,0);}
+
+50%{transform:translate(-50%,12px);}
+
+100%{transform:translate(-50%,0);}
+
+}
+
+/***************************
+RESPONSIVE
+****************************/
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.menu{
+
+display:block;
+
+}
+
+nav{
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+background:white;
+
+width:100%;
+
+display:none;
+
+}
+
+nav.show{
+
+display:block;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+padding:25px;
+
+gap:20px;
+
+}
+
+nav ul li a{
+
+color:#333 !important;
+
+}
+
+}
+
+/* ==========================================
+ABOUT
+========================================== */
+
+.about-container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about-image img{
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.about-content h3{
+
+font-size:36px;
+
+margin-bottom:20px;
+
+color:#0B3C5D;
+
+}
+
+.about-content p{
+
+margin-bottom:20px;
+
+line-height:1.9;
+
+font-size:17px;
+
+}
+
+/* ==========================================
+FEATURES
+========================================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.feature{
+
+background:#fff;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-10px);
+
+}
+
+.feature i{
+
+font-size:45px;
+
+color:#F4B400;
+
+margin-bottom:20px;
+
+}
+
+.feature h3{
+
+margin-bottom:15px;
+
+color:#0B3C5D;
+
+}
+
+.feature p{
+
+line-height:1.8;
+
+}
+
+/* ==========================================
+STATS
+========================================== */
+
+.stats{
+
+background:#0B3C5D;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.stat h2{
+
+font-size:50px;
+
+color:#FFD54F;
+
+margin-bottom:10px;
+
+}
+
+.stat p{
+
+font-size:18px;
+
+}
+
+/* ==========================================
+DESTINATIONS
+========================================== */
+
+.destination-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.destination-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.destination-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.destination-card img{
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.destination-card h3{
+
+padding:20px;
+
+text-align:center;
+
+color:#0B3C5D;
+
+}
+
+/* ==========================================
+RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
+.about-content{
+
+text-align:center;
+
+}
+
+}
+
+.package-container{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+.package-image{
+
+position:relative;
+
+}
+
+.package-image img{
+
+border-radius:20px;
+height:500px;
+object-fit:cover;
+
+}
+
+.price-tag{
+
+position:absolute;
+top:25px;
+left:25px;
+background:#FFD54F;
+padding:20px;
+border-radius:15px;
+font-size:30px;
+font-weight:bold;
+
+}
+
+.price-tag span{
+
+display:block;
+font-size:14px;
+
+}
+
+.subtitle{
+
+color:#1565C0;
+font-weight:bold;
+margin:20px 0;
+
+}
+
+.package-icons{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin:30px 0;
+
+}
+
+.package-icons div{
+
+background:#f4f4f4;
+padding:20px;
+border-radius:15px;
+text-align:center;
+
+}
+
+.timeline{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+.timeline-box{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.timeline-box span{
+
+background:#1565C0;
+color:white;
+padding:8px 15px;
+border-radius:30px;
+
+}
+
+.timeline-box h3{
+
+margin:20px 0;
+
+}
+
+.timeline-box ul{
+
+padding-left:20px;
+line-height:2;
+
+}
+
+.holy-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.holy-card{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+
+}
+
+.include-section{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+
+}
+
+.include-box{
+
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.include-box ul{
+
+padding-left:20px;
+line-height:2;
+
+}
+
+.permit{
+
+background:#0B3C5D;
+color:white;
+text-align:center;
+
+}
+
+.permit h2{
+
+margin-bottom:20px;
+
+}
+
+.permit p{
+
+max-width:900px;
+margin:auto;
+line-height:2;
+margin-bottom:40px;
+
+}
+
+@media(max-width:900px){
+
+.package-container,
+.include-section{
+
+grid-template-columns:1fr;
+
+}
+
+.package-image img{
+
+height:320px;
+
+}
+
+}
+
+/*=============================
+OTHER TOUR PACKAGES
+=============================*/
+
+.package-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:35px;
+
+}
+
+.tour-card{
+
+background:#fff;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+transition:.4s;
+
+}
+
+.tour-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.tour-card img{
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.tour-content{
+
+padding:30px;
+
+}
+
+.tour-content h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+color:#0B3C5D;
+
+}
+
+.tour-price{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#d32f2f;
+
+margin-bottom:15px;
+
+}
+
+.tour-content p{
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+.tour-content ul{
+
+padding-left:20px;
+
+line-height:2;
+
+margin-bottom:25px;
+
+}
+
+.tour-content li{
+
+margin-bottom:5px;
+
+}
+
+/*========================
+GALLERY
+=========================*/
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.gallery-grid img{
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+/*========================
+TESTIMONIALS
+=========================*/
+
+.testimonials{
+
+background:#f5f7fb;
+
+}
+
+.testimonial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.testimonial{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+text-align:center;
+
+font-size:20px;
+
+}
+
+.testimonial p{
+
+margin:20px 0;
+
+line-height:1.8;
+
+}
+
+/*========================
+BOOKING
+=========================*/
+
+.booking-box{
+
+max-width:750px;
+
+margin:auto;
+
+display:grid;
+
+gap:20px;
+
+}
+
+.booking-box input,
+
+.booking-box select,
+
+.booking-box textarea{
+
+padding:18px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+/*========================
+CONTACT
+=========================*/
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+/*========================
+FOOTER
+=========================*/
+
+footer{
+
+background:#0B3C5D;
+
+color:white;
+
+padding:60px 8%;
+
+text-align:center;
+
+}
+
+.social{
+
+margin:25px 0;
+
+font-size:30px;
+
+}
+
+.social i{
+
+margin:0 10px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.social i:hover{
+
+color:#FFD54F;
+
+}
+
+.floating-whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+z-index:999;
+
+}
+
+/*=====================
+BACK TO TOP
+=====================*/
+
+#topBtn{
+
+position:fixed;
+
+bottom:100px;
+
+right:25px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#0B3C5D;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+z-index:999;
+
+}
+
+/*=====================
+LIGHTBOX
+=====================*/
+
+#lightbox{
+
+display:none;
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.9);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+#lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:10px;
+
+}
+
+#closeLightbox{
+
+position:absolute;
+
+top:25px;
+
+right:40px;
+
+font-size:45px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+/*=====================
+LOADER
+=====================*/
+
+#loader{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+z-index:10000;
+
+}
+
+.loader-circle{
+
+width:70px;
+
+height:70px;
+
+border:8px solid #ddd;
+
+border-top:8px solid #F4B400;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+margin-bottom:20px;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+img{
+    width:100%;
+    max-width:100%;
+    display:block;
+    height:auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header id="header">
+
+<div class="logo">
+
+Hari <span>Om</span> Tourism
+
+</div>
+
+<div class="menu">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+<nav id="menu">
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#packages">Packages</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#booking">Booking</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Explore the Divine Himalayas with <span>Hari Om Tourism</span>
+
+</h1>
+
+<p>
+
+Your trusted travel partner in Pithoragarh for unforgettable journeys to
+Adi Kailash, Om Parvat, Darma Valley, Munsiyari, and the majestic Panchachuli Peaks.
+
+Experience spirituality, adventure and the breathtaking beauty of Uttarakhand with professionally managed all-inclusive tour packages.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#packages" class="btn">
+
+Explore Packages
+
+</a>
+
+<a href="#booking" class="secondary-btn">
+
+Book Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="scroll">
+
+<i class="fa-solid fa-angles-down"></i>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+                ABOUT
+========================================== -->
+
+<section id="about">
+
+<h2 class="title">About Hari Om Tourism</h2>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="images/about.png" alt="Hari Om Tourism">
+
+</div>
+
+<div class="about-content">
+
+<h3>Your Trusted Travel Partner in the Himalayas</h3>
+
+<p>
+
+Hari Om Tourism, based in the beautiful town of <strong>Pithoragarh, Uttarakhand</strong>, specializes in organizing spiritual, adventure, and nature tours across the Kumaon Himalayas.
+
+</p>
+
+<p>
+
+We proudly offer professionally managed tour packages to <strong>Adi Kailash, Om Parvat, Darma Valley, Chaukori, Panchachuli, </strong>, and many more breathtaking destinations.
+
+</p>
+
+<p>
+
+Our experienced local team ensures comfortable accommodation, delicious meals, reliable transportation, permit assistance, and unforgettable travel experiences.
+
+</p>
+
+<a href="#packages" class="btn">
+
+View Packages
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+            WHY CHOOSE US
+========================================== -->
+
+<section id="why">
+
+<h2 class="title">
+
+Why Choose Hari Om Tourism?
+
+</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<i class="fas fa-map-marked-alt"></i>
+
+<h3>Local Expertise</h3>
+
+<p>
+
+Born and raised in Pithoragarh, we know every destination, route, and hidden gem of the Kumaon Himalayas.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fas fa-hotel"></i>
+
+<h3>Comfortable Stay</h3>
+
+<p>
+
+Clean hotels, guest houses and homestays with quality food throughout your journey.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fas fa-shuttle-van"></i>
+
+<h3>Safe Transportation</h3>
+
+<p>
+
+Well-maintained vehicles and experienced drivers for mountain roads.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fas fa-id-card"></i>
+
+<h3>Permit Assistance</h3>
+
+<p>
+
+We help you obtain all required Inner Line Permits for Adi Kailash and Om Parvat.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fas fa-headset"></i>
+
+<h3>24×7 Support</h3>
+
+<p>
+
+Our team is always available before and during your journey.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fas fa-star"></i>
+
+<h3>Trusted Service</h3>
+
+<p>
+
+Hundreds of happy travellers have explored Uttarakhand with Hari Om Tourism.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+            STATISTICS
+========================================== -->
+
+<section class="stats">
+
+<div class="stat">
+
+<h2>1000+</h2>
+
+<p>Happy Travellers</p>
+
+</div>
+
+<div class="stat">
+
+<h2>8+</h2>
+
+<p>Tour Destinations</p>
+
+</div>
+
+<div class="stat">
+
+<h2>24×7</h2>
+
+<p>Customer Support</p>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+        FEATURED DESTINATIONS
+========================================== -->
+
+<section>
+
+<h2 class="title">
+
+Featured Destinations
+
+</h2>
+
+<div class="destination-grid">
+
+<div class="destination-card">
+
+<img src="images/adikailash.webp">
+
+<h3>Adi Kailash</h3>
+
+</div>
+
+<div class="destination-card">
+
+<img src="images/omparvat.jpg">
+
+<h3>Om Parvat</h3>
+
+</div>
+
+<div class="destination-card">
+
+<img src="images/darma.webp">
+
+<h3>Darma Valley</h3>
+
+</div>
+
+<div class="destination-card">
+
+<img src="images/munsiyari.jpg">
+
+<h3>Munsiyari</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+        PREMIUM PACKAGE
+========================================== -->
+
+<section class="package-section" id="packages">
+
+<h2 class="title">
+
+Adi Kailash & Om Parvat Yatra
+
+</h2>
+
+<div class="package-container">
+
+<div class="package-image">
+
+<img src="images/adikailash.jpg" alt="Adi Kailash">
+
+<div class="price-tag">
+
+<span>Starts</span>
+
+₹29,999
+
+<span>Per Person</span>
+
+</div>
+
+</div>
+
+<div class="package-info">
+
+<h2>
+
+🏔 Adi Kailash & Om Parvat Yatra
+
+</h2>
+
+<p class="subtitle">
+
+• 6 DAYS / 5 NIGHTS
+
+</p>
+
+<p>
+
+Experience one of India's most sacred Himalayan pilgrimages covering
+Adi Kailash, Om Parvat, Parvati Sarovar,
+Kali Mata Mandir and beautiful Pithoragarh.
+
+</p>
+
+<div class="package-icons">
+
+<div>
+
+<i class="fas fa-calendar"></i>
+
+6 Days
+
+</div>
+
+<div>
+
+<i class="fas fa-bed"></i>
+
+5 Nights
+
+</div>
+
+<div>
+
+<i class="fas fa-utensils"></i>
+
+Meals Included
+
+</div>
+
+<div>
+
+<i class="fas fa-bus"></i>
+
+Transport
+
+</div>
+
+</div>
+
+<a href="#booking" class="btn">
+
+Book This Tour
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+DAY-WISE ITINERARY
+========================================== -->
+
+<section class="timeline-section">
+
+<h2 class="title">
+
+Day Wise Itinerary
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-box">
+
+<span>DAY 1</span>
+
+<h3>Delhi → Pithoragarh</h3>
+
+<ul>
+
+<li>Morning pickup from Delhi</li>
+
+<li>Scenic Kumaon drive</li>
+
+<li>Hotel check-in</li>
+
+<li>Evening market visit</li>
+
+<li>Dinner & Overnight Stay</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-box">
+
+<span>DAY 2</span>
+
+<h3>Pithoragarh → Gunji / Nabi</h3>
+
+<ul>
+
+<li>Drive through Dharchula</li>
+
+<li>Kali River View</li>
+
+<li>Permit Verification</li>
+
+<li>Remote Himalayan Villages</li>
+
+<li>Night Stay at Gunji</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-box">
+
+<span>DAY 3</span>
+
+<h3>Adi Kailash Darshan</h3>
+
+<ul>
+
+<li>Jolingkong</li>
+
+<li>Parvati Sarovar</li>
+
+<li>Shiva-Parvati Temple</li>
+
+<li>Puja & Meditation</li>
+
+<li>Return to Gunji</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-box">
+
+<span>DAY 4</span>
+
+<h3>Om Parvat Darshan</h3>
+
+<ul>
+
+<li>Nabidhang</li>
+
+<li>Om Parvat View</li>
+
+<li>Kali Mata Mandir</li>
+
+<li>Return to Pithoragarh</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-box">
+
+<span>DAY 5</span>
+
+<h3>Pithoragarh City Tour</h3>
+
+<ul>
+
+<li>Mostamanu Temple</li>
+
+<li>Thalkedar Temple</li>
+
+<li>London Fort</li>
+
+<li>Chandak Hills</li>
+
+<li>Sunset View</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-box">
+
+<span>DAY 6</span>
+
+<h3>Pithoragarh → Delhi</h3>
+
+<ul>
+
+<li>Breakfast</li>
+
+<li>Departure</li>
+
+<li>Drop at Railway Station</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SACRED PLACES
+========================================== -->
+
+<section>
+
+<h2 class="title">
+
+Sacred Darshan Points
+
+</h2>
+
+<div class="holy-grid">
+
+<div class="holy-card">
+
+<h3>🏔 Adi Kailash</h3>
+
+<p>
+
+The sacred abode of Lord Shiva at 5,945 meters.
+
+</p>
+
+</div>
+
+<div class="holy-card">
+
+<h3>🕉 Om Parvat</h3>
+
+<p>
+
+Witness the naturally formed OM symbol in snow.
+
+</p>
+
+</div>
+
+<div class="holy-card">
+
+<h3>💙 Parvati Sarovar</h3>
+
+<p>
+
+Holy glacial lake believed to possess divine blessings.
+
+</p>
+
+</div>
+
+<div class="holy-card">
+
+<h3>🛕 Kali Mata Mandir</h3>
+
+<p>
+
+Origin of the sacred Kali River.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+INCLUSIONS
+========================================== -->
+
+<section class="include-section">
+
+<div class="include-box">
+
+<h2>✅ Package Includes</h2>
+
+<ul>
+
+<li>Hotel Accommodation</li>
+
+<li>Breakfast & Dinner</li>
+
+<li>Transportation</li>
+
+<li>Experienced Driver</li>
+
+<li>Parking Charges</li>
+
+<li>Permit Assistance</li>
+
+<li>Local Tour Guide</li>
+
+</ul>
+
+</div>
+
+<div class="include-box">
+
+<h2>❌ Not Included</h2>
+
+<ul>
+
+<li>Lunch</li>
+
+<li>Personal Expenses</li>
+
+<li>Travel Insurance</li>
+
+<li>Medical Expenses</li>
+
+<li>Anything not mentioned above</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+PERMIT
+========================================== -->
+
+<section class="permit">
+
+<h2>
+
+⚠ Inner Line Permit Required
+
+</h2>
+
+<p>
+
+Indian citizens require an Inner Line Permit (ILP) for Adi Kailash.
+
+Hari Om Tourism provides complete assistance with permit processing.
+
+Please carry your original Aadhaar Card along with four photocopies.
+
+</p>
+
+<a href="#booking" class="btn">
+
+Book Now on WhatsApp
+
+</a>
+
+</section>
+
+<!-- ==========================================
+        OTHER TOUR PACKAGES
+========================================== -->
+
+<section id="other-packages">
+
+<h2 class="title">
+
+More Amazing Tours
+
+</h2>
+
+<div class="package-grid">
+
+<!-- ================= DELHI PACKAGE ================= -->
+
+<div class="tour-card">
+
+<img src="images/adikailash1.jpg" alt="Delhi Adi Kailash">
+
+<div class="tour-content">
+
+<h3>🏔 Adi Kailash & Om Parvat </h3>
+
+<p>
+
+<strong>Duration:</strong> 6 Days / 5 Nights
+
+</p>
+
+<p>
+
+Starting with visits to
+Adi Kailash, Om Parvat,
+Jageshwar Dham,
+Kainchi Dham,
+Chitai Golu Devta Temple and
+Pithoragarh.
+
+</p>
+
+<ul>
+
+<li>✔ Pickup & Drop</li>
+
+<li>✔ Hotel Stay</li>
+
+<li>✔ Meals</li>
+
+<li>✔ Transportation</li>
+
+<li>✔ Permit Assistance</li>
+
+</ul>
+
+<a href="#booking" class="btn">
+
+Book Now
+
+</a>
+
+</div>
+
+</div>
+
+<!-- ================= DARMA ================= -->
+
+<div class="tour-card">
+
+<img src="images/darma.webp" alt="Darma Valley">
+
+<div class="tour-content">
+
+<h3>🌿 Darma Valley Expedition</h3>
+
+<p>
+
+<strong>Duration:</strong> 5 Days / 4 Nights
+
+</p>
+
+<p>
+
+Explore one of Uttarakhand's most
+beautiful Himalayan valleys filled
+with rivers, waterfalls,
+traditional villages and alpine
+meadows.
+
+</p>
+
+<ul>
+
+<li>✔ Dar Village</li>
+
+<li>✔ Panchachuli Views</li>
+
+<li>✔ Homestay</li>
+
+<li>✔ Local Guide</li>
+
+<li>✔ Transportation</li>
+
+</ul>
+
+<a href="#booking" class="btn">
+
+Book Now
+
+</a>
+
+</div>
+
+</div>
+
+<!-- ================= MUNSIYARI ================= -->
+
+<div class="tour-card">
+
+<img src="images/munsiyari.jpg" alt="Munsiyari">
+
+<div class="tour-content">
+
+<h3>🏕 Munsiyari Tour</h3>
+
+<p>
+
+<strong>Duration:</strong> 4 Days / 3 Nights
+
+</p>
+
+<p>
+
+Visit the Little Kashmir of Uttarakhand,
+Birthi Falls,
+Panchachuli View Point,
+Darkot Village and Tribal Museum.
+
+</p>
+
+<ul>
+
+<li>✔ Birthi Falls</li>
+
+<li>✔ Panchachuli Peaks</li>
+
+<li>✔ Darkot Village</li>
+
+<li>✔ Local Sightseeing</li>
+
+</ul>
+
+<a href="#booking" class="btn">
+
+Book Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+                GALLERY
+========================================== -->
+
+<section id="gallery">
+
+<h2 class="title">
+
+Travel Gallery
+
+</h2>
+
+<div class="gallery-grid">
+
+<img src="images/gallery1.jpg" alt="">
+<img src="images/gallery2.jpg" alt="">
+<img src="images/gallery3.jpeg" alt="">
+<img src="images/gallery4.jpeg" alt="">
+<img src="images/gallery5.webp" alt="">
+<img src="images/gallery6.webp" alt="">
+
+</div>
+
+</section>
+
+<!-- ==========================================
+            TESTIMONIALS
+========================================== -->
+
+<section class="testimonials">
+
+<h2 class="title">
+
+What Our Guests Say
+
+</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+
+★★★★★
+
+<p>
+
+"Our Adi Kailash Yatra was perfectly organised.
+Hotels, food and transport were excellent."
+
+</p>
+
+<h3>
+
+Rahul Sharma
+
+</h3>
+
+</div>
+
+<div class="testimonial">
+
+★★★★★
+
+<p>
+
+"Highly recommended.
+
+Hari Om Tourism made our journey completely hassle free."
+
+</p>
+
+<h3>
+
+Priya Joshi
+
+</h3>
+
+</div>
+
+<div class="testimonial">
+
+★★★★★
+
+<p>
+
+"The best travel company in Pithoragarh.
+Professional staff and comfortable vehicles."
+
+</p>
+
+<h3>
+
+Amit Verma
+
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+        BOOKING
+========================================== -->
+
+<section id="booking">
+
+<h2 class="title">
+
+Book Your Tour
+
+</h2>
+
+<div class="booking-box">
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="tel" id="phone" placeholder="Phone Number">
+
+<select id="tour">
+
+<option>Select Tour Package</option>
+
+<option>Adi Kailash & Om Parvat</option>
+
+<option>Darma Valley</option>
+
+<option>Munsiyari</option>
+
+<option>Panchachuli Trek</option>
+
+</select>
+
+<input type="date" id="date">
+
+<input type="number" id="persons" placeholder="Number of Persons">
+
+<textarea
+id="message"
+rows="6"
+placeholder="Write your requirements..."></textarea>
+
+<button class="btn" onclick="sendWhatsApp()">
+
+<i class="fab fa-whatsapp"></i>
+
+Enquire now
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+CONTACT
+========================================== -->
+
+<section id="contact">
+
+<h2 class="title">
+
+Contact Us
+
+</h2>
+
+<div class="contact-grid">
+
+<div>
+
+<h3>📍 Office</h3>
+
+<p>
+
+Hari Om Tourism
+
+Pithoragarh
+
+Uttarakhand
+
+</p>
+
+</div>
+
+<div>
+
+<h3>📞 Phone</h3>
+
+<p>
+
++91 84749 82333
+
+</p>
+
+</div>
+
+<div>
+
+<h3>📧 Email</h3>
+
+<p>
+
+hariomtourism@gmail.com
+
+</p>
+
+</div>
+
+<div>
+
+<h3>🕒 Office Hours</h3>
+
+<p>
+
+Monday - Sunday
+
+8:00 AM – 8:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+<br><br>
+
+<iframe
+
+src="https://www.google.com/maps?q=Pithoragarh,Uttarakhand&output=embed"
+
+width="100%"
+
+height="450"
+
+style="border:0;border-radius:20px;">
+
+</iframe>
+
+</section>
+
+<!-- ==========================================
+FOOTER
+========================================== -->
+
+<footer>
+
+<h2>
+
+Hari Om Tourism
+
+</h2>
+
+<p>
+
+Your Trusted Travel Partner in Uttarakhand
+
+</p>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-whatsapp"></i>
+
+</div>
+
+<p>
+
+© 2026 Hari Om Tourism.
+
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/918474982333"
+
+class="floating-whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- ==========================
+        BACK TO TOP
+=========================== -->
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- ==========================
+        LIGHTBOX
+=========================== -->
+
+<div id="lightbox">
+
+<span id="closeLightbox">&times;</span>
+
+<img id="lightboxImg">
+
+</div>
+
+<!-- ==========================
+        LOADING SCREEN
+=========================== -->
+
+<div id="loader">
+
+<div class="loader-circle"></div>
+
+<h2>Hari Om Tourism</h2>
+
+</div>
+
+<script>
+
+/**********************
+LOADER
+**********************/
+
+window.addEventListener("load",function(){
+
+setTimeout(function(){
+
+document.getElementById("loader").style.display="none";
+
+},800);
+
+});
+
+/**********************
+STICKY HEADER
+**********************/
+
+window.addEventListener("scroll",function(){
+
+document.getElementById("header").classList.toggle("sticky",window.scrollY>80);
+
+});
+
+/**********************
+MOBILE MENU
+**********************/
+
+const menu=document.querySelector(".menu");
+
+const nav=document.getElementById("menu");
+
+menu.onclick=function(){
+
+nav.classList.toggle("show");
+
+}
+
+/**********************
+WHATSAPP BOOKING
+**********************/
+
+function sendWhatsApp(){
+
+let name=document.getElementById("name").value;
+
+let phone=document.getElementById("phone").value;
+
+let email=document.getElementById("email").value;
+
+let tour=document.getElementById("tour").value;
+
+let date=document.getElementById("date").value;
+
+let persons=document.getElementById("persons").value;
+
+let message=document.getElementById("message").value;
+
+let text=
+`🙏 Hari Om Tourism Booking
+
+Name : ${name}
+
+Phone : ${phone}
+
+Email : ${email}
+
+Package : ${tour}
+
+Travel Date : ${date}
+
+Persons : ${persons}
+
+Message : ${message}`;
+
+window.open(
+
+"https://wa.me/918474982333?text="+encodeURIComponent(text),
+
+"_blank"
+
+);
+
+}
+
+/**********************
+BACK TO TOP
+**********************/
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>500)
+
+topBtn.style.display="block";
+
+else
+
+topBtn.style.display="none";
+
+}
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+/**********************
+LIGHTBOX
+**********************/
+
+const images=document.querySelectorAll(".gallery-grid img");
+
+const lightbox=document.getElementById("lightbox");
+
+const lightboxImg=document.getElementById("lightboxImg");
+
+const close=document.getElementById("closeLightbox");
+
+images.forEach(img=>{
+
+img.onclick=function(){
+
+lightbox.style.display="flex";
+
+lightboxImg.src=this.src;
+
+}
+
+});
+
+close.onclick=function(){
+
+lightbox.style.display="none";
+
+}
+
+/**********************
+SMOOTH SCROLL
+**********************/
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
+
+</script>
